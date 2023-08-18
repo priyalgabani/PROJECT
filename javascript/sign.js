@@ -1,3 +1,7 @@
+import Navbar from "../components/nav.js";
+document.getElementById('navbar').innerHTML=Navbar()
+
+
 const userdata = (e) => {
     e.preventDefault();
 

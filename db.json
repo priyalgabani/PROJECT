@@ -1,5 +1,16 @@
 {
   "user": [
-    
+    {
+      "name": "priyal",
+      "email": "priyalgabani@gmail.com",
+      "password": "gfgDFHGF3534@@",
+      "id": 1
+    },
+    {
+      "name": "priya",
+      "email": "priya@gmail.com",
+      "password": "cvbgfSGFD23543@@",
+      "id": 2
+    }
   ]
 }
