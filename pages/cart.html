@@ -5,10 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add to cart</title>
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="/style/cart.css">
 </head>
 <body>
-    <!-- header -->
-    <div id="navbar"></div>
+    <div id="navbar">
+
+    </div>
+    <div class="sidebar">
+        <div class="head row justifly-content">
+            <p>MY CART</p>
+        </div>
+        <div id="cartItem">
+            <table border="1px" cellspacing="30px" cellpadding="5px">
+                <thead>
+                    <tr>
+                        <th class="white">image</th>
+                        <th class="white">product name</th>
+                        <th class="white">price</th>
+                        <th class="white">quantity</th>
+                        <th class="white">total</th>
+                        <th class="white">delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="white">
+                            <img src="https://i.pinimg.com/736x/b7/37/84/b73784f337f1520fd09b680b4be649d7.jpg" alt="">
+                        </td>
+                        <td class="white">vagetables</td>
+                        <td class="white">100</td>
+                        <td class="white ">
+                           <div class="boxes">
+                            <span class="minus"><b>-</b> </span>
+                            <span class="num"><b>00</b> </span>
+                            <span class="plus"><b>+</b> </span>
+                           </div>
+                        </td>
+                        <td class="white">100</td>
+                        <td class="white">delete</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+
+        </div>
+        <div class="foot">
+            <h3>Total</h3>
+            <div id="total"> 0.00</div>
+        </div>
+        <button class="btn">
+            <a href="#">ORDER SUBMITTED</a>
+        </button>
+    </div>
     
 </body>
 <script type="module" src="/javascript/cart.js"></script>

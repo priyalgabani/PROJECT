@@ -1,6 +1,5 @@
 import Navbar from "../components/nav.js";
-document.getElementById('navbar').innerHTML=Navbar()
-
+document.getElementById('navbar').innerHTML=Navbar();
 
 const userdata = (e) => {
     e.preventDefault();
@@ -51,6 +50,7 @@ const userdata = (e) => {
                     },3000)
                 }
                 else {
+                localStorage.setItem("loggin",true)
                     fetch ("http://localhost:3000/user",{
                         method:"POST",
                         headers:{"content-type":"application/json"},

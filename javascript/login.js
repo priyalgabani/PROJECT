@@ -1,8 +1,6 @@
 
 import Navbar from "../components/nav.js";
-document.getElementById('navbar').innerHTML=Navbar()
-
-
+document.getElementById('navbar').innerHTML=Navbar();
 
 const login = (e) => {
     e.preventDefault();
@@ -14,7 +12,11 @@ const login = (e) => {
     .then((data)=>{
         if(data.length > 0){
             if(data[0].password === password){
+                localStorage.setItem("loggin",true)
                 alert("login success")
+                setTimeout(() => {
+                    window.location.href = "/pages/pages.html"
+                },1000)
             }
             else{
                 alert("login invalid")
